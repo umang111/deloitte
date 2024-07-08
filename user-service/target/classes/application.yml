@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/deloitteUserService
+    password: root
+  application:
+    name: user-service
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.yaml
